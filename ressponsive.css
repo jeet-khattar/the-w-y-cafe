@@ -392,6 +392,10 @@
         font-size: 12px;
     }
 }
- /* @media (min-width:1025px) {
-    
-} */
+ @media (min-width:1025px) {
+    .the-restro-info button{
+        height: 40px;
+        width: 250px;
+        font-size: 18px;
+    }
+}

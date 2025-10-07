@@ -476,6 +476,10 @@
     }
 }
 
-/* @media (min-width:1025px) {
-    
-} */
+@media (min-width:1025px) {
+     .reserve button{
+        height: 40px;
+        width: 250px;
+        font-size: 18px;
+    }
+}
