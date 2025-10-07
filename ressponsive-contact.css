@@ -266,6 +266,8 @@
     }
 }
 
-/* @media (min-width:1025px) {
-    
-} */
+@media (min-width:1025px) {
+   form{
+    margin-right: 30px;
+   } 
+}
