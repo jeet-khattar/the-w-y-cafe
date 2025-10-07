@@ -1,0 +1,340 @@
+:root {
+    --primary-red-color: rgb(192, 43, 43);
+    --off-white-color: #FAF3E0;
+     --primary-red-color: rgb(192, 43, 43);
+    --off-white-color: #FAF3E0;
+      --bg-light: #F9F5EB;
+      --accent: #B08968;
+      --accent-dark: #7F5539;
+      --accent-hover: #9C6644;
+      --text-dark: #3E2723;
+      --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/cafe-intirier-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* font-family: Georgia, 'Times New Roman', Times, serif;  */
+    font-family: 'Playfair Display', serif;
+    color: white;
+
+}
+
+header ul li {
+    list-style-type: none;
+    align-content: center;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-size: 23px;
+    color: rgba(255, 255, 255, 0.521);
+
+}
+
+header ul li a:hover {
+    border-bottom: 2px solid var(--primary-red-color);
+    color: var(--off-white-color);
+
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+
+    height: 50px;
+
+}
+
+
+header p {
+    font-size: 70px;
+    width: 80%;
+    margin: auto;
+    color: var(--off-white-color);
+
+}
+
+header h4 {
+    font-style: italic;
+    color: var(--off-white-color);
+}
+
+header h4 mark {
+    background-color: var(--primary-red-color);
+
+}
+
+.our-gallery {
+    height: 50vh;
+    align-content: center;
+}
+
+.our-gallery h1 {
+    font-family: 'Playfair Display', serif;
+    color: black;
+}
+
+.our-gallery p {
+    color: rgb(141, 141, 141);
+    width: 650px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+
+}
+
+/* .photo-grid{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px;
+    grid-template-areas: 
+    "leftone centerone rightone"
+    "lefttwo centerone righttwo"
+    ;
+}
+.leftone{
+    grid-area: leftone;
+ 
+background-image: url(img/gallery_1.jpeg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.rightone{
+    grid-area: rightone;
+   
+    background-image: url(img/gallery_2.jpeg);
+    background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+    
+}
+.centerone{
+    grid-area: centerone;
+   
+    background-image: url(img/gallery_3.jpeg);
+    background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+    
+}
+.lefttwo{
+    grid-area: lefttwo;
+   
+    background-image: url(img/gallery_4.jpeg);
+    background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+    
+}
+.righttwo{
+    grid-area: righttwo;
+  
+    background-image: url(img/gallery_5.jpeg);
+    background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+} */
+
+.photo-grid {
+    display: grid;
+    gap: 15px;
+    margin-top: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-template-areas:
+        "photo-one photo-two photo-three"
+        "photo-four photo-two photo-five";
+}
+
+.photo-one {
+    grid-area: photo-one;
+    background-image: url(img/gallery_1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+
+
+.photo-two {
+    grid-area: photo-two;
+    background-image: url(img/gemini-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.photo-three {
+    grid-area: photo-three;
+    background-image: url(img/gallery_7.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.photo-four {
+    grid-area: photo-four;
+    background-image: url(img/gallery_9.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.photo-five {
+    grid-area: photo-five;
+    background-image: url(img/gemini-4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.photogrid-2 {
+    display: grid;
+    gap: 15px;
+    margin-top: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-template-areas:
+        "one two three"
+        "four five three"
+    ;
+
+}
+
+.one {
+    grid-area: one;
+    background-image: url(img/gallery_1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.two {
+    grid-area: two;
+    background-image: url(img/gallery_2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.three {
+    grid-area: three;
+    background-image: url(img/gemini-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+
+}
+
+.four {
+    grid-area: four;
+    background-image: url(img/gallery_3.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+
+}
+
+.five {
+    grid-area: five;
+    background-image: url(img/gallery_7.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+
+}
+.photo-grid-3{
+    gap: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-template-areas: 
+    "aa b c"
+    "aa d e";
+   
+}
+.aa{
+    grid-area: aa;
+    background-image: url(img/gemini-3.png);
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+.b{
+     grid-area: b;
+    background-image: url(img/gallery_2.jpeg);
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+.c{
+     grid-area: c;
+    background-image: url(img/gallery_3.jpeg);
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+.d{
+    
+     grid-area: d;
+    background-image: url(img/gallery_6.jpeg);
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+.e{
+     grid-area: e;
+    background-image: url(img/gallery_7.jpeg);
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+
+footer{
+    /* background-image: url(img/a.png); */
+    background-color: #7F5539;
+    background-position: center;
+    color: var(--off-white-color);
+}
+.footer-text{
+    color: var(--off-white-color);
+    font-family: 'Playfair Display', serif;
+
+}
+
+footer .footer-ul-list li a{
+    /* color: rgb(141, 141, 141); */
+    color: white;
+}
+footer .footer-ul-list li a:hover{
+    color: var(--text-dark);
+}

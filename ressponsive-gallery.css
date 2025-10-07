@@ -1,0 +1,344 @@
+@media (min-width:821px) and (max-width:1024px) {
+    header ul li a {
+        font-size: 18px;
+    }
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    header p {
+        font-size: 45px;
+    }
+
+    header h4 {
+        font-size: 25px;
+    }
+
+    header {
+        height: 50vh;
+        width: 100%;
+    }
+  
+
+    .the-restro {
+        height: 50vh;
+    }
+
+    .todays-menu {
+        height: 30vh;
+    }
+
+    .menu-items {
+        padding-top: 180px;
+        height: 50vh;
+    }
+
+    .testimony {
+        height: 30vh;
+    }
+
+    .the-restro img {
+        height: 80%;
+        width: 90%;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+
+    .todays-menu h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+
+    }
+
+    .big-photo p {
+        font-size: 22px;
+    }
+    .best-unique h1 {
+        font-size: 38px;
+    }
+    .our-gallery{
+    height: 18vh;
+    }
+  
+
+}
+@media (min-width:769px) and (max-width:820px) {
+    header ul li a {
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    header p {
+        font-size: 38px;
+    }
+
+    header h4 {
+        font-size: 18px;
+    }
+
+    header {
+        height: 40vh;
+        width: 100%;
+    }
+
+    .the-restro-info h2 {
+        font-size: 22px;
+    }
+
+    .the-restro-info p {
+        font-size: 13px;
+    }
+
+    .the-restro-info button {
+        width: 140px;
+    }
+
+    .the-restro {
+        height: 46vh;
+        padding-top: 65px;
+    }
+
+    .todays-menu {
+        height: 30vh;
+    }
+   .our-gallery {
+    height: 23vh;
+    align-content: center;
+}
+
+    .reserve {
+        height: 40vh;
+        width: 100%;
+        background-image: url(img/a.png);
+        background-position: bottom;
+        padding-top: 180px;
+    }
+    .menu-items {
+        padding-top: 103px;
+        height: 146vh;
+    }
+
+    .menu-items .card {
+        align-items: end;
+    }
+
+    .todays-menu h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+
+    }
+
+    .todays-menu p {
+        font-size: 16px;
+    }
+
+   
+  
+
+    .footer-text {
+        font-size: 22px;
+    }
+
+    .a {
+        font-size: 16px;
+    }
+
+    footer .footer-ul-list li a {
+        font-size: 12px;
+    }
+}
+@media (max-width:435px) {
+    #h-ul {
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 0;
+
+
+        width: 100%;
+    }
+
+    #h-ul li a {
+        font-size: 15px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    header p {
+        font-size: 25px;
+    }
+
+    header h4 {
+        font-size: 16px;
+    }
+
+    header {
+        height: 50vh;
+    }
+    .footer-text {
+        font-size: 22px;
+    }
+
+    footer .footer-ul-list li a {
+        font-size: 12px;
+    }
+
+    footer {
+        height: 85vh;
+    }
+
+   
+    .our-gallery{
+        height: 23vh;
+        width: 400px;
+        
+    }
+    .our-gallery p{
+        width: 100%;
+        font-size: 15px;
+    }
+
+
+}
+
+@media (min-width:436px) and (max-width:768px) {
+    header ul li a {
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    header p {
+        font-size: 38px;
+    }
+
+    header h4 {
+        font-size: 18px;
+    }
+
+    header {
+        height: 40vh;
+        width: 100%;
+    }
+
+    .the-restro-info h2 {
+        font-size: 22px;
+    }
+
+    .the-restro-info p {
+        font-size: 13px;
+    }
+
+    .the-restro-info button {
+        width: 140px;
+    }
+
+    .the-restro {
+        height: 46vh;
+        padding-top: 65px;
+    }
+
+    .todays-menu {
+        height: 25vh;
+    }
+
+    .reserve {
+        height: 40vh;
+        width: 100%;
+        background-image: url(img/a.png);
+        background-position: bottom;
+        padding-top: 180px;
+    }
+    .reserve button{
+        height: 50px;
+        width: 250px;
+        font-size: 21px;
+    }
+
+    .menu-items {
+        padding-top: 103px;
+        height: 146vh;
+    }
+
+    .menu-items .card {
+        align-items: end;
+    }
+
+    .todays-menu h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+
+    }
+
+    .todays-menu p {
+        font-size: 16px;
+    }
+
+    .testimony {
+        height: 25vh;
+    }
+
+    .testimony h1 {
+        font-size: 30px;
+
+        margin-bottom: 20px;
+    }
+
+    .testimony p {
+        font-size: 16px;
+    }
+
+    .the-restro img {
+        height: 80%;
+        width: 90%;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+    .our-gallery{
+    height: 27vh;
+    }
+
+    .big-photo p {
+        font-size: 15px;
+    }
+
+    .carousel-inner .carousel-item img {
+        height: 80%;
+        width: 100%;
+
+    }
+
+    .best-unique h1 {
+        font-size: 30px;
+    }
+
+    .evants h1 {
+        font-size: 30px;
+    }
+
+    .evants p {
+        font-size: 16px;
+    }
+
+    .footer-text {
+        font-size: 22px;
+    }
+
+    .a {
+        font-size: 16px;
+    }
+
+    footer .footer-ul-list li a {
+        font-size: 12px;
+    }
+}
+ /* @media (min-width:1025px) {
+    
+} */

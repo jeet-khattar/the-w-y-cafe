@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reserve a Table | W&Y Café</title>
+  <style>
+    /* ====== COLOR PALETTE ====== */
+    :root {
+      --bg-light: #F9F5EB;
+      --accent: #B08968;
+      --accent-dark: #7F5539;
+      --accent-hover: #9C6644;
+      --text-dark: #3E2723;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    /* ====== NAVBAR ====== */
+    header {
+      background: var(--white);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 3rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--accent-dark);
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-hover);
+    }
+
+    /* ====== HERO SECTION ====== */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.45);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      z-index: 1;
+      letter-spacing: 1px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      z-index: 1;
+      margin-top: 0.5rem;
+    }
+
+    /* ====== RESERVATION SECTION ====== */
+    .reservation {
+      max-width: 900px;
+      margin: 4rem auto;
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    .reservation h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: var(--accent-dark);
+      font-size: 2rem;
+    }
+
+    .reservation p {
+      text-align: center;
+      color: #5f4635;
+      margin-bottom: 2rem;
+    }
+
+    form {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-weight: 500;
+      margin-bottom: 0.3rem;
+    }
+
+    input, textarea, select {
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 5px rgba(176, 137, 104, 0.3);
+    }
+
+    button {
+      background: var(--accent-dark);
+      color: white;
+      padding: 0.9rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background: var(--accent-hover);
+      transform: scale(1.03);
+    }
+
+    /* ====== FOOTER ====== */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--accent-dark);
+      color: white;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    /* ====== RESPONSIVE ====== */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 2.3rem;
+      }
+
+      .reservation {
+        margin: 2rem;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ====== HEADER ====== -->
+  <header>
+    <div class="logo">W&Y Café</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Reservation</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ====== HERO SECTION ====== -->
+  <section class="hero">
+    <h1>Reserve a Table Today!</h1>
+    <p>Enjoy a warm meal and cozy moments at our café.</p>
+  </section>
+
+  <!-- ====== RESERVATION FORM ====== -->
+  <section class="reservation">
+    <h2>Reservation</h2>
+    <p>Book your table in advance and make your café time memorable.</p>
+    <form id="reservationForm" onsubmit="return validateForm()">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="guests">Number of Guests</label>
+        <select id="guests" required>
+          <option value="">Select guests</option>
+          <option value="1">1 Guest</option>
+          <option value="2">2 Guests</option>
+          <option value="3">3 Guests</option>
+          <option value="4">4 Guests</option>
+          <option value="5+">5 or more</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Date & Time</label>
+        <input type="datetime-local" id="date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Special Requests</label>
+        <textarea id="message" rows="3" placeholder="Write your requests (optional)"></textarea>
+      </div>
+
+      <button type="submit">Submit Reservation</button>
+    </form>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    © 2025 W&Y Café | Designed with ☕ by Jeet Khattar
+  </footer>
+
+  <script>
+    function validateForm() {
+      const phone = document.getElementById('phone').value;
+      if (!/^[0-9]{10}$/.test(phone)) {
+        alert("Please enter a valid 10-digit phone number.");
+        return false;
+      }
+      alert("Reservation submitted successfully!");
+      return true;
+    }
+  </script>
+
+</body>
+</html>

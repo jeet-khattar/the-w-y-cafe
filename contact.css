@@ -1,0 +1,160 @@
+:root{
+    --primary-red-color: rgb(192, 43, 43);
+    --off-white-color:#FAF3E0;
+     --primary-red-color: rgb(192, 43, 43);
+    --off-white-color: #FAF3E0;
+      --bg-light: #F9F5EB;
+      --accent: #B08968;
+      --accent-dark: #7F5539;
+      --accent-hover: #9C6644;
+      --text-dark: #3E2723;
+      --white: #ffffff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/cafe-intirier-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* font-family: Georgia, 'Times New Roman', Times, serif;  */
+    font-family: 'Playfair Display', serif;
+    color: white;
+   
+}
+
+
+
+header ul li{
+    list-style-type: none;
+    align-content: center;
+}
+header ul li a{
+text-decoration: none;
+font-size: 23px;
+color: rgba(255, 255, 255, 0.521);
+
+}
+header ul li a:hover{
+   border-bottom: 2px solid var(--primary-red-color);
+   color: var(--off-white-color);
+
+}
+
+header ul{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    
+    height: 50px;
+
+}
+.hero-sectionn{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.hero-sectionn h1{
+ font-family: 'Playfair Display', serif;
+ /* border: 2px solid black; */
+}
+.hero-sectionn p {
+    font-family: 'Lato', sans-serif;
+    /* border: 2px solid black; */
+    width: 70%;
+    margin-left: 15%;
+}
+
+
+header p{
+    font-size: 70px;
+    width: 80%;
+    margin: auto;
+    color: var(--off-white-color);
+    
+}
+header h4{
+    font-style: italic;
+    color: var(--off-white-color);
+}
+header h4 mark{
+    background-color: var(--primary-red-color);
+
+}
+form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+input,
+textarea,
+select {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 5px rgba(176, 137, 104, 0.3);
+}
+
+button {
+    background: var(--accent-dark);
+    color: white;
+    padding: 0.9rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: var(--accent-hover);
+    transform: scale(1.03);
+}
+.left-data{
+    padding: 20px;
+}
+footer{
+    /* background-image: url(img/a.png); */
+    background-color: #7F5539;
+    background-position: center;
+    color: var(--off-white-color);
+}
+.footer-text{
+    color: var(--off-white-color);
+    font-family: 'Playfair Display', serif;
+
+}
+.reservaion{
+  padding: 20px;
+}
+
+footer .footer-ul-list li a{
+    /* color: rgb(141, 141, 141); */
+    color: white;
+}
+footer .footer-ul-list li a:hover{
+    color: var(--text-dark);
+}

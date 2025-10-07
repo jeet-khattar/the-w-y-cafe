@@ -1,0 +1,223 @@
+:root {
+    --primary-red-color: rgb(192, 43, 43);
+    --off-white-color: #FAF3E0;
+     --primary-red-color: rgb(192, 43, 43);
+    --off-white-color: #FAF3E0;
+      --bg-light: #F9F5EB;
+      --accent: #B08968;
+      --accent-dark: #7F5539;
+      --accent-hover: #9C6644;
+      --text-dark: #3E2723;
+      --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/cafe-intirier-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* font-family: Georgia, 'Times New Roman', Times, serif;  */
+    font-family: 'Playfair Display', serif;
+    color: white;
+
+}
+
+header ul li {
+    list-style-type: none;
+    align-content: center;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-size: 23px;
+    color: rgba(255, 255, 255, 0.521);
+
+}
+
+header ul li a:hover {
+    border-bottom: 2px solid var(--primary-red-color);
+    color: var(--off-white-color);
+
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+
+    height: 50px;
+
+}
+
+
+header p {
+    font-size: 70px;
+    width: 80%;
+    margin: auto;
+    color: var(--off-white-color);
+
+}
+
+header h4 {
+    font-style: italic;
+    color: var(--off-white-color);
+}
+
+header h4 mark {
+    background-color: var(--primary-red-color);
+
+}
+
+.todays-menu {
+    height: 50vh;
+    align-content: center;
+
+
+}
+
+.todays-menu h1 {
+    font-family: 'Playfair Display', serif;
+    color: black;
+}
+
+.todays-menu p {
+    color: rgb(141, 141, 141);
+    width: 650px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.menu-items {
+    height: 110vh;
+    width: 100%;
+
+    background-color: var(--off-white-color);
+
+    transition: .5s all ease-in-out;
+    padding: 180px 100px 0px;
+    padding: 20px;
+
+}
+
+.menu-items .card {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 0px 5px 0px;
+
+
+
+
+}
+
+.menu-items .card-body {
+    width: 80%;
+}
+
+.menu-items .card img {
+    height: 100%;
+    width: 70%;
+}
+
+
+.Bake-Potato-Pizza .card h5 {
+    font-family: 'Playfair Display', serif;
+}
+
+.menu-items .card .price {
+    color: var(--primary-red-color);
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+
+}
+
+.menu-items .card p {
+    font-family: 'Lato', sans-serif;
+    color: rgb(141, 141, 141);
+}
+
+.testimony {
+    height: 50vh;
+    align-content: center;
+}
+
+.testimony h1 {
+    font-family: 'Playfair Display', serif;
+    color: black;
+}
+
+.testimony p {
+    color: rgb(141, 141, 141);
+    width: 650px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.reserve {
+    height: 50vh;
+    width: 100%;
+    background-image: url(img/a.png);
+    background-position:bottom;
+    padding-top: 80px;
+
+}
+
+.reserve button {
+    border: 2px solid var(--primary-red-color);
+    background-color: transparent;
+    color: var(--off-white-color);
+    transition: .2s all ease-in-out;
+    border-radius: 3px;
+
+}
+
+.reserve button:hover {
+    background-color: var(--primary-red-color);
+    color: var(--off-white-color);
+}
+
+.reserve h1 {
+    font-family: 'Playfair Display', serif;
+    color: var(--off-white-color);
+
+}
+
+.reserve p {
+
+    width: 650px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    color: var(--off-white-color);
+
+}
+footer{
+    /* background-image: url(img/a.png); */
+    background-color: #7F5539;
+    background-position: center;
+    color: var(--off-white-color);
+}
+.footer-text{
+    color: var(--off-white-color);
+    font-family: 'Playfair Display', serif;
+
+}
+
+footer .footer-ul-list li a{
+    /* color: rgb(141, 141, 141); */
+    color: white;
+}
+footer .footer-ul-list li a:hover{
+    color: var(--text-dark);
+}
