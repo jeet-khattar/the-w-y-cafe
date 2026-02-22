@@ -29,8 +29,7 @@
     }
 
     .menu-items {
-        padding-top: 180px;
-        height: 50vh;
+        height: 29vh;
     }
 
     .testimony {
@@ -214,7 +213,7 @@
     
     .the-restro{
         padding-top: 50px;
-        height: 95vh;
+        height: 75vh;
     }
     .todays-menu{
         height: 35vh;
@@ -228,7 +227,7 @@
         margin: 0;
     }
     .menu-items{
-        height: 240vh;
+        padding-top: 20px ;
     }
     .testimony{
         height: 35vh;
@@ -326,12 +325,11 @@
     }
 
     .menu-items {
-        padding-top: 103px;
-        height: 81vh;
+        height: 77vh;
     }
 
     .menu-items .card {
-        align-items: end;
+        align-items: c;
     }
 
     .todays-menu h1 {
@@ -341,8 +339,7 @@
     }
 
     .todays-menu p {
-        font-size: 86px;
-        color: red;
+        font-size: 17px;
     }
 
     .testimony {

@@ -158,7 +158,6 @@ header h4 mark {
 }
 
 .menu-items {
-    height: 70vh;
     width: 100%;
 
     background-color: var(--off-white-color);
