@@ -74,6 +74,9 @@
     .best-unique h1 {
         font-size: 38px;
     }
+    .reserve button{
+        padding: 10px;
+    }
 
 
 }
@@ -207,6 +210,9 @@
     footer .footer-ul-list li a {
         font-size: 12px;
     }
+    .reserve button{
+        padding: 10px;
+    }
 }
 
 @media (max-width:435px) {
@@ -240,7 +246,7 @@
     }
 
     .reserve {
-        height: 40vh;
+        height: 62vh;
         width: 100%;
         background-image: url(img/a.png);
         background-position: bottom;
@@ -250,7 +256,9 @@
     .reserve h1 {
         font-size: 26px;
     }
-
+    .reserve button{
+        padding: 10px;
+    }
     .reserve p {
         width: 340px;
         font-size: 15px;
@@ -268,6 +276,7 @@
 
     .the-restro {
         padding-top: 50px;
+        height: 95vh;
     }
 
     .todays-menu {
@@ -284,7 +293,7 @@
     }
 
     .menu-items {
-        height: 371vh;
+        height: 470vh;
     }
 
     .testimony {
@@ -334,11 +343,11 @@
     }
 
     footer {
-        height: 85vh;
+        height: 103vh;
     }
 
     .menu-items .card {
-        align-items: end;
+        align-items: center;
     }
 
     .menu-items .card img {

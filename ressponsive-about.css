@@ -179,7 +179,11 @@
         font-size: 12px;
     }
     footer{
-        height: 85vh;
+        height: 103vh;
+    }
+    .the-Founders-Meet{
+        height: 25vh;
+        margin: 50px 0;
     }
 
 }
