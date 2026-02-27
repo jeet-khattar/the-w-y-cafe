@@ -1,4 +1,4 @@
-@media (min-width:821px) and (max-width:1024px) {
+@media (max-width:992px) {
     header ul li a {
         font-size: 18px;
     }
@@ -59,7 +59,7 @@
 
 }
 
-@media (min-width:769px) and (max-width:820px) {
+ @media (min-width:769px) and (max-width:820px) {
     header ul li a {
         font-size: 16px;
     }
@@ -174,14 +174,12 @@
     footer .footer-ul-list li a{
         font-size: 12px;
     }
-}
-@media (max-width:435px) {
+} 
+@media (max-width:768px) {
     #h-ul{
         display: flex;
         justify-content: space-evenly;
         padding-left: 0;
-       
-        
         width: 100%;
     }
     #h-ul li a {
@@ -213,7 +211,6 @@
     
     .the-restro{
         padding-top: 50px;
-        height: 75vh;
     }
     .todays-menu{
         height: 35vh;
@@ -280,7 +277,7 @@
   
 }
 
-@media (min-width:436px) and (max-width:768px) {
+/* @media (min-width:436px) and (max-width:768px) {
     header ul li a {
         font-size: 16px;
     }
@@ -392,7 +389,7 @@
     footer .footer-ul-list li a{
         font-size: 12px;
     }
-}
+} */
  @media (min-width:1025px) {
     .the-restro-info button{
         height: 40px;
